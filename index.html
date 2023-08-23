@@ -29,9 +29,7 @@
         .flips{
             padding-top: 150px;
         }
-        p:hover{
-            color: #2874F0;
-        }
+        
         .color{
             color:green;
         }
@@ -88,7 +86,29 @@
         display: flex;
         justify-content: space-evenly;
     }
-    
+    .fashion{
+            display: none;
+            position: absolute;
+            overflow: hidden;
+            z-index: 1;
+            background-color: #fff;
+            width:200px;
+            padding: 10px;
+
+        }
+        .esthanu:hover .fashion{
+            display:block;
+
+            
+        }
+        
+        .fashion p{
+            text-align: left;
+            color: black;
+        }
+    .fashion p:hover{
+        color:blue;
+    }
        
         
     </style>
@@ -102,8 +122,27 @@
         </li>
         <li><input type="search" placeholder="search for prodcuts,brand and more" style="width:500px;height: 30px;" >
         </li>
-        <li><a href="./login.html"><button style="width:80px; height:40px;">login </button></a></li>
-        <li><a href="./become.html"  >      Become a Seller </a></li>
+        <li>
+            <div class="esthanu" >
+                <div>
+                    <a href="./login.html"><button style="width:80px; height:40px;">login</button></a>
+                </div>
+           
+            <div class="fashion">
+                <p>
+                   <a href="./myprofile.html" style="color: black;"> My profile</a></p>
+                <p>Electronics GST store</p>
+                <p>Camera & Accessories</p>
+                <p> Computer Peripherals</p>
+                <p> Gaming</p>
+                <p> Health & personal Care</p>
+                <p> Laptop Accessories</p>
+                <p>Laptop and desktop</p>
+                <p > Mobiles Accessories</p>
+            </div>
+        </div></li>
+
+        <li><a href="./become.html"  > Become a Seller </a></li>
         <li>more </li>
         <li>Cart</li>
     </ul>
@@ -122,9 +161,27 @@
 </div>
 <div clas="flip">
     <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/a1e3b4c041823d12.png?q=100"/>
-    <p>Electronics</p>
-
+    <div class="esthanu" >
+        <div>
+       Electronics
+        </div>
+   
+    <div class="fashion">
+        <p>
+           Audio
+        <p>Electronics GST store</p>
+        <p>Camera & Accessories</p>
+        <p> Computer Peripherals</p>
+        <p> Gaming</p>
+        <p> Health & personal Care</p>
+        <p> Laptop Accessories</p>
+        <p>Laptop and desktop</p>
+        <p > Mobiles Accessories</p>
+    </div>
 </div>
+   
+</div>
+
 <div clas="flip">
     <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/5fdd40bb1b4f1ab9.png?q=100"/>
     <p>Tv&Appliance</p>
@@ -132,7 +189,25 @@
 </div>
 <div clas="flip">
     <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/d0e73939aba7e8ac.png?q=100"/>
-    <p>Fashion</p>
+    <div class="esthanu">
+        <div>
+        Fashion
+        </div>
+   
+    <div class="fashion">
+        <p>
+            Men's Top Wear
+        </p>
+        <p>womens Ethinc</p>
+        <p>Women westren</p>
+        <p>men footerwear</p>
+        <p>Watches and Accessories</p>
+        <p>bags,suitcase  & language</p>
+        <p>kids</p>
+        <p>essentials</p>
+        <p>winter</p>
+    </div>
+</div>
 
 </div>
 <div clas="flip">
@@ -599,7 +674,7 @@ BEST SELLING ON FLIPKART:Fire-Boltt Ninja Calling Pro Bluetooth Calling Smartwat
         <p class="Become">© 2007-2023 Flipkart.coms</p>
     </div>
     <div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K" alt=""><span>asaddw</span> 
+        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt="">
     </div>
     
 </div>
